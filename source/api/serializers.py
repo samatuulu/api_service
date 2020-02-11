@@ -7,11 +7,12 @@ class TaskSerializer(serializers.ModelSerializer):
     class Meta:
         model = Task
         fields = (
-            'id', 'name', 'description'
+            'id', 'name', 'description', 'tag'
         )
 
 
 class TagSerializer(serializers.ModelSerializer):
     class Meta:
         model = Tag
-        fields = ('id', 'name', 'created', 'task')
+        fields = ('id', 'name', 'created')
+

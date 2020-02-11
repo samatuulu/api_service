@@ -11,3 +11,4 @@ class TaskListView(ListView):
 class TagListView(ListView):
     model = Tag
     template_name = 'tags.html'
+

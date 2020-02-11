@@ -4,6 +4,8 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register(r'tasks', views.TaskViewSet)
+router.register(r'tags', views.TagViewSet)
+
 
 app_name = 'api'
 
