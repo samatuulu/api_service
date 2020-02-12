@@ -3,8 +3,8 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register(r'tasks', views.TaskViewSet)
-router.register(r'tags', views.TagViewSet)
+router.register(r'tasks', views.TaskViewSet, basename="tasks")
+router.register(r'tags', views.TagViewSet, basename="tags")
 
 
 app_name = 'api'
